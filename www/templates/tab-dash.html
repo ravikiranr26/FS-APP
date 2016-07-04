@@ -1,0 +1,112 @@
+<ion-view view-title="CTO blog – FS">
+  <ion-content class="padding">
+    <ion-list>
+
+      <div ng-repeat="group in groups">
+        <ion-item class="item-avatar item-icon-right" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+          <img ng-src="{{group.iconURL}}">
+          <div class="item-text-center item-text-wrap">{{group.name}}</div>
+          <i class="icon" ng-class="isGroupShown(group) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+        </ion-item>
+
+        <ion-item class="item-accordion item-icon-right" ng-repeat="item in group.childItems">
+          <div class="item-text-center cat-txt-head item-text-wrap" ng-click="toggleSubGroup(item)" ng-show="isGroupShown(group)">{{item.childName}}
+            <div style="background-size: cover;width:100%;height: 200px;background-image: url({{ item.imageURL }})"></div>
+            </div>
+          <i class="icon" ng-class="isSubGroupShown(item) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+
+          <div class="item-accordion sub-item" ng-repeat="child in item.grandChildren" ng-show="isSubGroupShown(item)">
+            <div class="item-text-center item-text-wrap">{{child.grandChildName}}</div>
+                 <ion-item class="item item-text-wrap">
+                  <div ng-class="isItemShown(child.text) ? 'item-expand active' : 'item-expand inactive'">
+                    <p class="item item-text-wrap" ng-bind-html="child.text"></p>
+                  </div>
+                  <div ng-click="toggleItem(child.text)" class="item-expand-footer">
+                    <i ng-class="isItemShown(child.text) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+                    {{ isItemShown(child.text) ? 'Less' : 'More' }}
+                  </div>
+                </ion-item>
+              
+          </div>
+
+        </ion-item>
+      </div>
+
+    </ion-list>
+      
+      <ion-list>
+        <div>
+          <ion-item class="item-stable"
+                    ng-click="toggleGroup(group)"
+                    ng-class="{active: isGroupShown(group)}">
+              <i class="icon" ng-class="isGroupShown(group) ? 'ion-ios-compose' : 'ion-ios-compose-outline'"></i>
+            &nbsp;
+            Write a post
+          </ion-item>
+          <ion-item class="item-accordion"
+                    ng-show="isGroupShown(group)">
+            <div class="list post-wrapper">
+              <label class="item item-input">
+                <input type="text" placeholder="Title">
+              </label>
+              <label class="item item-input">
+                <textarea placeholder="Body"></textarea>
+              </label>
+                <label class="item item-input">
+                <input type="text" placeholder="Upload file/Video">
+              </label>
+                
+                <div class="row">
+                       <div class="col text-left">
+                     <button class="button button-positive">
+                      Browse files
+                    </button>
+                    </div>
+                    <div class="col text-right">
+                     <button class="button button-positive">
+                      Upload
+                    </button>
+                    </div>
+                </div>
+                <div class="list">
+
+                  <label class="item item-input item-select">
+                    <div class="input-label">
+                      Category
+                    </div>
+                    <select>
+                      <option>What is trending ?</option>
+                        <option selected>Innovate to Disrupt</option>
+                    </select>
+                  </label>
+                    
+                     <label class="item item-input item-select">
+                    <div class="input-label">
+                     Sub-Category
+                    </div>
+                    <select>
+                      <option>Fintech</option>
+                        <option>Blockchain</option>
+                        <option selected>Insurance</option>
+                        <option>IOT</option>
+                    </select>
+                  </label>
+                </div>
+                <p>OR</p>
+                <label class="item item-input">
+                <input type="text" placeholder="URL">
+              </label>
+                  <div class="row">
+    
+                    <div class="col text-right">
+                     <button class="button button-positive">
+                      Publish
+                    </button>
+                    </div>
+                </div>
+            </div>
+          </ion-item>
+        </div>
+      </ion-list>
+  </ion-content>
+</ion-view>
