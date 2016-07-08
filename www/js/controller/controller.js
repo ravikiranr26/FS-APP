@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['starter.services'])
     .controller('SignInCtrl', function($scope, $state) {
         $scope.signIn = function(user) {
             console.log('Sign-In', user);
