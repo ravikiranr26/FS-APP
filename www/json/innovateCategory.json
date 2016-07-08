@@ -1,0 +1,22 @@
+{
+	"innovateCategory": [
+          {
+            "id":1,
+            "name": "AIE",
+            "date": "11 June 2016",
+            "author": "Sudhir Pai",
+            "title": "Applied Innovation Discover launch in Toronto",
+             "text": "It was a great opportunity to be part of Applied Innovation Discover launch in Toronto. Thanks Sanjay, over coming days I shall share the demos with relevant teams to explore future potential. Interactions with clients and partners in Toronto helped to understand their priorities for focus areas.   We now have a nod from MaRS, a Fintech hub in Canada, taking off with a number of initiatives.   As Lanny mentioned ‘Exchange’ provides a platform for clients to get a feel from other industry solutions.  E.g. Predictive analytics solution we built for London Hydro is applicable for events run by Four Seasons and both clients were present at the occasion. RBC insurance can be part of Utilities clients ecosystem in Canada to drive Smart home initiatives."   
+          },
+          {
+            "id":2,
+            "name": "Innovation Events",
+           "date": "4 March 2016",
+            "author": "Sudhir Pai",
+            "title": "RISE Innovation program - Mumbai centre",
+             "text": "This week Barclays launched Mumbai centre as part of their RISE Innovation program. https://thinkrise.com/ Its a physical and digital community that provides start-ups with the connections and resources to create ground-breaking businesses. Tagline as “Connect, Co-create and Scale”, event was attended by group CIO, head of innovation, CEO of India, VC’s and top Fintechs. Capgemini was called out multiple times for connecting Barclays with Fintechs.  It was clear that the main focus for the bank in coming months is on AI. Takeaways •  Applicability of Pune Innovation centre for co-creation with Barclays. • Connecting with Fintech hubs in Mumbai for other clients and for global hubs e.g. MaRS • Looking out for similar programs with other banks. Thanks to Rosemary and team for introducing and connecting with huge community start-ups.  Looks like this trend continues with SBI India’s largest bank announcing 200 Cr for fintechs this week."       
+          }
+        ],
+  "name": "Innovate to Disrupt",
+        "imageURL": "img/idea.jpg" 
+}

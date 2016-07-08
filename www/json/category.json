@@ -1,0 +1,33 @@
+{
+  "category": 
+  [
+      {
+        "id":1,
+        "name": "What is trending ?",
+        "imageURL": "img/trending.jpg"
+      },
+      {
+        "id":2,
+        "name": "Innovate to Disrupt",
+        "imageURL": "img/idea.jpg" 
+      },
+      {
+        "id":3,
+        "name": "Group Catalyst",
+        "imageURL": "img/groupcatalyst.jpg"
+       
+      },
+      {
+        "id":4,
+        "name": "External Influences",
+        "imageURL": "img/external.jpg"
+      },
+      {
+        "id":5,
+        "name": "CTO Community",
+        "imageURL": "img/community.png"
+      }
+  ],
+  "imageURL":"img/categories-icon.png",
+  "name":"Category"
+}
