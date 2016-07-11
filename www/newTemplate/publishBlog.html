@@ -1,0 +1,69 @@
+            <div>
+                <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+                    <i class="icon" ng-class="isGroupShown(group) ? 'ion-ios-compose' : 'ion-ios-compose-outline'"></i> &nbsp; Write a post
+                </ion-item> 
+                <ion-item class="item-accordion">  
+                <!-- ng-show="isGroupShown(group)" -->
+                    <div class="list post-wrapper">
+                        <label class="item item-input">
+                <input type="text" placeholder="Title">
+              </label>
+                        <label class="item item-input">
+                <textarea placeholder="Body"></textarea>
+              </label>
+                        <label class="item item-input">
+                <input type="text" placeholder="Upload file/Video">
+              </label>
+
+                        <div class="row">
+                            <div class="col text-left">
+                                <button class="button button-positive">
+                      Browse files
+                    </button>
+                            </div>
+                            <div class="col text-right">
+                                <button class="button button-positive">
+                      Upload
+                    </button>
+                            </div>
+                        </div>
+                        <div class="list">
+
+                            <label class="item item-input item-select">
+                    <div class="input-label">
+                      Category
+                    </div>
+                    <select>
+                      <option>What is trending ?</option>
+                        <option selected>Innovate to Disrupt</option>
+                    </select>
+                  </label>
+
+                            <label class="item item-input item-select">
+                    <div class="input-label">
+                     Sub-Category
+                    </div>
+                    <select>
+                      <option>Fintech</option>
+                        <option>Blockchain</option>
+                        <option selected>Insurance</option>
+                        <option>IOT</option>
+                    </select>
+                  </label>
+                        </div>
+                        <p>OR</p>
+                        <label class="item item-input">
+                <input type="text" placeholder="URL">
+              </label>
+                        <div class="row">
+
+                            <div class="col text-right">
+                                <button class="button button-positive">
+                      Publish
+                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+        

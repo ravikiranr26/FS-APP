@@ -1,0 +1,12 @@
+{
+	"groupCategory": [
+          {
+          	"id":1,
+            "name": "Catalyst",
+            "count": 8,
+              "text": "There are ongoing debates on impacts of fourth industrial revolution, opportunities and challenges. The article below sets the context nicely and might be helpful when we have strategic conversations with CXOs. https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/"
+          }
+        ],
+	"name": "Group Catalyst",
+        "imageURL": "img/groupcatalyst.jpg"
+}
