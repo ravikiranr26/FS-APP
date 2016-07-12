@@ -48,11 +48,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/writeBlog',
         views: {
         'tab-dash': {
-         templateUrl: 'newTemplate/publishBlog.html',
+         templateUrl: 'newTemplate/writeBlog.html',
          controller: 'blogPostCtrl'
          }
      }
     })
+
+     .state('tab.blog.All', {
+        url: '/tab.dash-All',
+        views: {
+        'tab-dash': {
+         templateUrl: 'newTemplate/subCategory.html',
+         controller: 'blogPostCtrl'
+         }
+     }
+    })
+    
 
     // Each tab has its own nav history stack:
 
