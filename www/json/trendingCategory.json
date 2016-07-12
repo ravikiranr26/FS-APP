@@ -5,6 +5,14 @@
         "date": "26 February 2016",
         "author": "Sudhir Pai",
         "title": "Fintechs’ Action",
+        "label":[{
+            "id":1,
+            "name":"Fintech"
+        },
+        {
+            "id":2,
+            "name":"Blockchain"
+        }],
         "text": "Fintechs’ action is everywhere and both banks (e.g. Emirates NBD news today) and SI firms (e.g. Accenture) playing ‘Orchestrator’s role providing ‘platforms’ for Fintech firms to experiment their products / ideas and take it to the next level.  Should we think in similar lines and build an ecosystem of start-ups /fintech’s around us connecting with our clients? How can we expand AIE concepts to specific domain areas?<ul><li>Barclays building 43 Blockchain apps in Innovation labs</li><li>DBS providing 5000 sq. ft. of co-working space</li><li>ANZ CEO’s vision to be a disruptor, asking Fintech’s to contact directly</li></ul>"
     }, {
         "id": 2,
@@ -12,6 +20,14 @@
         "date": "26 February 2016",
         "author": "Sudhir Pai",
         "title": "Connected Insurance",
+        "label":[{
+            "id":1,
+            "name":"IoT"
+        },
+        {
+            "id":2,
+            "name":"Insurance"
+        }],
         "text": "‘Connected Insurance’ is becoming popular embracing infinite possibilities through IoT. If we map it to our Digital /MIT framework, we can see its applicability in all three areas - customer experience (new devices, mHealth apps), Operational efficiencies (shorter claims cycles) and new products / services (“Pay as you Drive”?).  How do we position ourselves with firms like ROC-Connect providing cloud based IoT platform for Insurers?"
     }, {
 
@@ -20,6 +36,14 @@
         "date": "26 February 2016",
         "author": "Sudhir Pai",
         "title": "Accenture and Fintech",
+         "label":[{
+            "id":1,
+            "name":"Fintech"
+        },
+        {
+            "id":2,
+            "name":"Competitors"
+        }],
         "text": "Is it worth noting Accenture’s investment in Vlocity to build vertical solutions on Salesforce platform or its investments in building Fintech Innovation Centres across globe? (till date 59 start-ups, $200 worth funding raised and 29 FS institutions have participated)"
     }, {
         "id": 4,
@@ -27,6 +51,11 @@
         "date": "4 March 2016",
         "author": "Sudhir Pai",
         "title": "Blockchain",
+        "label":[
+        {
+            "id":1,
+            "name":"Blockchain"
+        }],
         "text": "We keep hearing about this technology and very quickly Banks are seriously attempting to understand its implications. Today we hear in the news that the R3-led blockchain consortium of the world’s biggest banks has completed their second known proof of concept experiment of blockchain technology with trials spanning five different blockchain solutions. Forty of the world’s biggest banks that are partners in the private blockchain consortium led by New York-based blockchain-tech startup R3 have tested distributed ledger systems from five blockchain vendors as well as three cloud providers. Keen to add this as a priority into our plan to explore this technology further and understand specifics of POCs being attempted by our clients."
     }, {
         "id": 5,
@@ -34,6 +63,11 @@
         "date": "4 March 2016",
         "author": "Sudhir Pai",
         "title": "Nina4airbnb",
+        "label":[
+        {
+            "id":1,
+            "name":"Client Relationship"
+        }],
         "text": "You might have heard about this a while ago, but thought of sharing it.  Resume of Nina for a job at airbnb. A best example of showing client intimacy and passion. This is how she caught CEO’s attention http://www.nina4airbnb.com/"
     }, {
         "id": 6,

@@ -6,11 +6,25 @@ angular.module('starter.controllers', ['starter.services'])
         };
     })
 
-  .controller('blogPostCtrl', function($scope, $state) {
-       console.log('blogPostCtrl');
-        
-        
+  .controller('blogPostCtrl', function($scope, $state,$http) {
+    $http.get('json/category.json').success(function(data) {
+        $scope.categories = data;
+        console.log($scope.categories);
+    }).error(function(error) {
+        console.log(error);
+    });
+
+    
+    $scope.BlogList =[{'name':'All'},{'name':'Publish'},{'name':'Drafts'}]
+
+    $scope.selectedBlog = function(name) {
+            
+            var d1= 'tab.blog.'+name;
+            console.log('selectedBlog',name,d1);
+            $state.go(d1);
+        }
     })
+    
 
 
 .controller('CategoryCtrl', function($scope, $state, $http, $ionicHistory, ServiceCategory) {
@@ -117,16 +131,21 @@ angular.module('starter.controllers', ['starter.services'])
         };
     })
     .controller('subCategoryDetails1Ctrl', function($scope, $state, $http, $ionicHistory) {
+         console.log('In subCategoryDetails1Ctrl Ctrl');
+     
         $http.get('json/trendingCategory.json').success(function(data) {
             console.log(data.trendingCategory);
             $scope.subCategory = data.trendingCategory[0];
+            if(data.trendingCategory[0].label  != undefined) {
+                  $scope.label =  data.trendingCategory[0].label
+            }
         }).error(function(error) {
             console.log(error);
         });
         console.log('In subCategoryDetails1Ctrl Ctrl');
      
     })
-     .controller('subCategoryDetails2Ctrl', function($scope, $state, $http, $ionicHistory) {
+    .controller('subCategoryDetails2Ctrl', function($scope, $state, $http, $ionicHistory) {
         $http.get('json/groupCategory.json').success(function(data) {
             console.log(data);
             $scope.subCategory = data.groupCategory[0];
@@ -144,6 +163,11 @@ angular.module('starter.controllers', ['starter.services'])
     }).error(function(error) {
         console.log(error);
     });
+
+    $scope.writeBlog = function() {
+        $state.go('tab.writeBlog');
+        console.log('blogPostCtrl');
+    }
 
     // $scope.categories = ServiceCategory.getCategory();
   //   $scope.isGroupShown = function(group) {
