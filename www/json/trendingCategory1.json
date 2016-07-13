@@ -1,0 +1,106 @@
+{
+  "trendingCategory": [
+    {
+      "id": 1,
+      "name": "RPA"
+    },
+    {
+      "id": 2,
+      "name": "Blockchain"
+    },
+    {
+      "id": 3,
+      "name": "APIs"
+    },
+    {
+      "id": 4,
+      "name": "AI"
+    },
+    {
+      "id": 5,
+      "name": "Fintech"
+    },
+    {
+      "id": 6,
+      "name": "IoT"
+    },
+    {
+      "id": 7,
+      "name": "Insurance"
+    },
+    {
+      "id": 8,
+      "name": "Competitors"
+    },
+    {
+      "id": 9,
+      "name": "Client Relationships"
+    },
+    {
+      "id": 10,
+      "name": "Digital"
+    },
+    {
+      "id": 11,
+      "name": "Ecosystem"
+    },
+    {
+      "id": 12,
+      "name": "Bi-model IT"
+    },
+    {
+      "id": 13,
+      "name": "Agile"
+    },
+    {
+      "id": 14,
+      "name": "Universities"
+    },
+    {
+      "id": 15,
+      "name": "Social Media"
+    },
+    {
+      "id": 16,
+      "name": "Brand"
+    },
+    {
+      "id": 17,
+      "name": "Cloud"
+    },
+    {
+      "id": 18,
+      "name": "Other Industries"
+    },
+    {
+      "id": 19,
+      "name": "Disruption"
+    },
+    {
+      "id": 20,
+      "name": "Partnerships"
+    },
+    {
+      "id": 21,
+      "name": "Apps"
+    },
+    {
+      "id": 22,
+      "name": "Mobility"
+    },
+    {
+      "id": 23,
+      "name": "Natural Languages"
+    },
+    {
+      "id": 24,
+      "name": "Cybersecurity"
+    },
+    {
+      "id": 25,
+      "name": "New buzz words"
+    }
+  ],
+  "name": "What is trending ?",
+  "imageURL": "img/trending.jpg"
+}
