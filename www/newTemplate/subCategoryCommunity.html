@@ -1,11 +1,12 @@
 
-<div class="bar bar-subheader"><a href="#/tab/dash"> <img src="img/categories-icon.png" style="width:10% ;height:30px;"/></a> <h3 style="width:29%;height:30px;margin-top:0px; "> Category  </h3><h3 style="width:60%;height:30px; margin-top: 1px;"> {{subCategory.name}} </h3>
-</div>   
- <content has-header="true" has-subheader="true">
-                <div class="list" style="background-size: 100% 100%;width:100%;height:100%; top:90px;background-image: url({{subCategory.imageURL}})">
+      
+<div class="bar bar-subheader"> <img src="img/categories-icon.png" style="width:10% ;height:30px;" > <h3 style="width:29%;height:30px;margin-top:0px; "> Category </h3><h3 style="width:60%;height:30px; margin-top: 1px;"> {{subCategory.name}} </h3>
+</div> 
+ <ion-item has-header="true" has-subheader="true"  style="background-size: 100% 100%;width:100%;height:100%; top:90px;background-image: url({{subCategory.imageURL}})">
+         <!--        <div class="list"> -->
                     <item  ng-repeat="category in subCategory.communityCategory" type="item-text-wrap" href="#/tab/dash/category" ng-click="selectedTrend(category)">
                         <p style="background-color:white;" >{{category.name}}</p>
                     </item>
-                </div>
-                </content>
+              <!--   </div> -->
+                </ion-item>
             
